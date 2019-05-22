@@ -4,7 +4,7 @@ $show-home-image: true;
 $home-image:url(../img/background.jpg);
 $background-opacity:0.7;
 @mixin easeOut {
-    transition: all 1.5s ease-out;
+    transition: all 4.5s ease-out;
 }
 
 @mixin background {
@@ -13,7 +13,7 @@ $background-opacity:0.7;
  background: $home-image;
  background-attachment: fixed;
  background-size: cover;
-    &:after{
+    &:after {
         content: '';
      position: absolute;
      top:0;
@@ -28,7 +28,7 @@ $background-opacity:0.7;
     }
 }
 
-@function set-text-color($color){
+@function set-text-color($color) {
 @if (lightness($color) > 40) {
     @return #000;
 } @else {
